@@ -1,0 +1,45 @@
+.py-base {
+    padding-block: var(--py-base);
+}
+
+.py-base {
+    padding-block: var(--py-lg);
+
+}
+
+.py-xl {
+    padding-block: var(--py-xl);
+}
+
+.py-2xl {
+    padding-block: var(--py-2xl);
+}   
+
+
+.px-lg {
+    padding-inline: var(--px-lg);
+}
+
+
+.container {
+    --max-width: 375px;
+    width: min(var(--max-width), 100% - var(--px-lg) * 2);
+    margin-inline: auto;
+    border: solid 1px var(--stroke-color);
+}
+
+@media (width >= 80em) {
+    .container {
+        --max-width: 80em;
+    }
+}
+
+.desktop-only {
+    display: initial;
+}
+
+.event-columns {
+    display:grid;
+    gap: 1rem;
+
+}
